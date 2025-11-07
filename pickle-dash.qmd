@@ -1,0 +1,257 @@
+---
+title: "Pickleball Court Utilization, October 2025"
+format: 
+  dashboard:
+    theme: zephyr
+    orientation: columns
+---
+
+```{r}
+library(tidyverse)
+library(scales)
+library(plotly)
+library(reactable)
+
+# load data
+by_session <- read_rds("data/by_session.rds")
+session_player_long <- read_rds("data/session_player_long.rds")
+
+# spots available and filled total
+session_summary <- by_session |> 
+  summarize(
+    n_spots_avail = sum(spots),
+    n_spots_filled = sum(registered),
+    fill_rate = n_spots_filled / n_spots_avail,
+  )
+
+# spots available and filled by level
+session_summary_level <- by_session |> 
+  group_by(level) |> 
+  summarize(
+    n_spots_avail = sum(spots),
+    n_spots_filled = sum(registered),
+    fill_rate = n_spots_filled / n_spots_avail,
+  )
+
+# count of total sessions per player
+by_player <- session_player_long |> 
+  filter(!is.na(player_id)) |> 
+  count(player_id) 
+
+# total player count and mean sessions
+player_summary <- by_player |> 
+  summarize(n_players = n(), mean = mean(n))
+```
+
+# Summary
+
+## Value boxes {width=33%}
+
+```{r}
+#| content: valuebox
+#| title: "Spots filled"
+list(
+  icon = "person-check-fill",
+  color = "#D6EFE1",
+  value = comma(session_summary$n_spots_filled)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Spots available"
+list(
+  icon = "ticket",
+  color = "#e6f2fd",
+  value = comma(session_summary$n_spots_avail)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Unique players"
+list(
+  icon = "people",
+  color = "#FBF5E1",
+  value = comma(player_summary$n_players)
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Average sessions per player"
+list(
+  icon = "activity",
+  color = "#F6CEFC",
+  value = comma(player_summary$mean, accuracy = 0.1)
+)
+```
+
+## Charts
+
+### Fill rate {.tabset}
+
+#### Fill rate total
+
+```{r}
+# gauge chart of total fill rate
+plot_ly(
+  domain = list(x = c(0, 1), y = c(0, 1)),
+  value = session_summary$fill_rate,
+  title = list(text = "Fill rate"),
+  type = "indicator",
+  mode = "gauge+number",
+  number = list(valueformat = ".0%"),
+  gauge = list(
+    bar = list(thickness = 1, color = "steelblue"),
+    borderwidth = 0,
+    steps = list(list(range = list(0, 1), color = "#e5e5e5")),
+    axis = list(range = list(0, 1), tickformat = ".0%")
+    )
+  ) |> 
+  config(displayModeBar = FALSE) |> 
+  layout(
+    font = list(family = "Inter"),
+    margin = list(t = 40, r = 40, b = 10, l = 30)
+    )
+```
+
+#### Fill rate by level
+
+```{r}
+# bar chart of fill rate by session level - use ggplot2 to make static chart
+p <- session_summary_level |> 
+  mutate(
+    tooltip = paste0(
+      "<b>", level, "</b><br>",
+      "Fill rate: ", percent(fill_rate, 1), "<br>",
+      "Spots filled: ", n_spots_filled, "<br>",
+      "Spots available: ", n_spots_avail, "<br>"
+      )
+    ) |>   
+  ggplot(aes(fill_rate, level, text = tooltip)) +
+  geom_col(aes(x = 1, text = NULL), fill = "grey90", width = 0.8) +
+  geom_col(fill = "steelblue", width = 0.8) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0.01, NA)),
+    labels = label_percent()
+    ) +
+  labs(
+    title = "Fill rate by level",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.text.y = element_text(size = 11)
+    )
+  
+# then use ggplotly to convert ggplot2 to interactive plotly graphic
+ggplotly(p, tooltip = "text") |> 
+  config(displayModeBar = FALSE) |> 
+  layout(
+    font = list(family = "Inter"),
+    margin = list(t = 40, r = 20, b = 20, l = 20)
+    )
+```
+
+### Histogram
+
+```{r}
+# histogram of sessions played per month - use ggplot2 to make static chart
+p <- by_player |> 
+  ggplot(aes(n)) +
+  geom_histogram(binwidth = 1, color = "white", fill = "steelblue") +
+  scale_x_continuous(expand = expansion(mult = c(0.01, NA))) +
+  scale_y_continuous(expand = expansion(mult = c(0.01, NA))) +
+  labs(
+    title = "How many sessions did each player attend in the month?",
+    x = "Number of sessions",
+    y = "Number of players"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid.major.x  = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank()
+    )
+
+# then use ggplotly to convert ggplot2 to interactive plotly graphic
+ggplotly(p) |> 
+  config(displayModeBar = FALSE) |> 
+  layout(font = list(family = "Inter"))
+```
+
+# Data Tables
+
+## Tables {.tabset}
+
+### Session detail
+
+```{r}
+# reactable of one row per session 
+by_session |> 
+  arrange(date_time, level) |> 
+  transmute(
+    session_id,
+    level,
+    date = force_tz(date_time, tzone = "America/New_York"),
+    time = force_tz(date_time, tzone = "America/New_York"),
+    weekday,
+    day_part,
+    registered,
+    spots,
+    fill_rate = pct_registered
+  ) |> 
+  reactable(
+    filterable = TRUE,
+    pagination = FALSE,
+    highlight = TRUE,
+    columns = list(
+      date = colDef(format = colFormat(date = TRUE)),
+      time = colDef(format = colFormat(time = TRUE)),
+      fill_rate = colDef(format = colFormat(digits = 0, percent = TRUE))
+      )
+    )
+```
+
+### Player summary
+
+```{r}
+# reactable of one row per player
+by_player |> 
+  arrange(desc(n)) |> 
+  reactable(
+    filterable = TRUE,
+    pagination = FALSE,
+    highlight = TRUE,
+    columns = list(n = colDef(name = "Number of sessions"))
+    )
+```
+
+### Player detail
+
+```{r}
+# reactable of one row per session per player
+session_player_long |> 
+  filter(!is.na(player_id)) |> 
+  arrange(player_id, date_time) |> 
+  transmute(
+    player_id,
+    level,
+    date = force_tz(date_time, tzone = "America/New_York"),
+    time = force_tz(date_time, tzone = "America/New_York"),
+    weekday,
+    session_id
+  ) |> 
+  reactable(
+    filterable = TRUE,
+    pagination = FALSE,
+    highlight = TRUE,
+    columns = list(
+      date = colDef(format = colFormat(date = TRUE)),
+      time = colDef(format = colFormat(time = TRUE))
+      )
+    )
+```

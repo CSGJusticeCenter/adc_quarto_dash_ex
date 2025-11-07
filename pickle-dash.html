@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pickleball Court Utilization, October 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="pickle-dash_files/libs/clipboard/clipboard.min.js"></script>
+<script src="pickle-dash_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="pickle-dash_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="pickle-dash_files/libs/quarto-html/popper.min.js"></script>
+<script src="pickle-dash_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="pickle-dash_files/libs/quarto-html/anchor.min.js"></script>
+<link href="pickle-dash_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="pickle-dash_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="pickle-dash_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="pickle-dash_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="pickle-dash_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="pickle-dash_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="pickle-dash_files/libs/bootstrap/bootstrap-3258f0e33c85d2debd3bd60f3d5a48fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="pickle-dash_files/libs/bootstrap/bootstrap-dark-3258f0e33c85d2debd3bd60f3d5a48fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="pickle-dash_files/libs/bootstrap/bootstrap-3258f0e33c85d2debd3bd60f3d5a48fb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="pickle-dash_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="pickle-dash_files/libs/quarto-dashboard/stickythead.js"></script>
+
+
+
+<script src="pickle-dash_files/libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="pickle-dash_files/libs/quarto-dashboard/components.js"></script>
+
+<link href="pickle-dash_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="pickle-dash_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="pickle-dash_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="pickle-dash_files/libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="pickle-dash_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="pickle-dash_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="pickle-dash_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="pickle-dash_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="pickle-dash_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+<script src="pickle-dash_files/libs/core-js-2.5.3/shim.min.js"></script>
+
+<script src="pickle-dash_files/libs/react-18.2.0/react.min.js"></script>
+
+<script src="pickle-dash_files/libs/react-18.2.0/react-dom.min.js"></script>
+
+<script src="pickle-dash_files/libs/reactwidget-2.0.0/react-tools.js"></script>
+
+<link href="pickle-dash_files/libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+
+<script src="pickle-dash_files/libs/reactable-binding-0.4.4/reactable.js"></script>
+
+
+
+</head>
+
+<body class="quarto-dashboard dashboard-fill fullcontent quarto-light">
+
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+
+
+    <div class="navbar-brand-container">       
+
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">Pickleball Court Utilization, October 2025</a></div>
+        
+        
+      </div>
+    </div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-summary" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#summary" data-scrolling="false" href="#summary" aria-controls="summary" aria-selected="true"><span class="nav-link-text">Summary</span></a></li><li class="nav-item" role="presentation"><a id="tab-data-tables" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#data-tables" data-scrolling="false" href="#data-tables" aria-controls="data-tables" aria-selected="false"><span class="nav-link-text">Data Tables</span></a></li></ul></div></div>
+</nav>
+</header>
+<div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
+
+<div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div id="summary" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-summary">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 33fr) minmax(3em, 67fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()" style=" background: #D6EFE1;">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="person-check-fill" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-person-check-fill"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Spots filled
+</p>
+<p class="value-box-value">
+914
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()" style=" background: #e6f2fd;">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="ticket" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-ticket"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Spots available
+</p>
+<p class="value-box-value">
+2,144
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()" style=" background: #FBF5E1;">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="people" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-people"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Unique players
+</p>
+<p class="value-box-value">
+146
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()" style=" background: #F6CEFC;">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="activity" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-activity"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Average sessions per player
+</p>
+<p class="value-box-value">
+6.5
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header dashboard-card-no-title bslib-navs-card-title">
+
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Fill rate total" aria-selected="true" class="nav-link active">Fill rate total</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Fill rate by level" aria-selected="false" class="nav-link">Fill rate by level</a></li></ul></div>
+
+
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-5"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-1"><div class="card-body html-fill-item html-fill-container" data-title="Fill rate total">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-c5e55392c61ef48d0df8" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-c5e55392c61ef48d0df8">{"x":{"visdat":{"4bd8657e671":["function () ","plotlyVisDat"]},"cur_data":"4bd8657e671","attrs":{"4bd8657e671":{"domain":{"x":[0,1],"y":[0,1]},"value":0.42630597014925375,"title":{"text":"Fill rate"},"mode":"gauge+number","number":{"valueformat":".0%"},"gauge":{"bar":{"thickness":1,"color":"steelblue"},"borderwidth":0,"steps":[{"range":[0,1],"color":"#e5e5e5"}],"axis":{"range":[0,1],"tickformat":".0%"}},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"indicator"}},"layout":{"margin":{"b":10,"l":30,"t":40,"r":40},"font":{"family":"Inter"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"domain":{"x":[0,1],"y":[0,1]},"value":0.42630597014925375,"title":{"text":"Fill rate"},"mode":"gauge+number","number":{"valueformat":".0%"},"gauge":{"bar":{"thickness":1,"color":"steelblue"},"borderwidth":0,"steps":[{"range":[0,1],"color":"#e5e5e5"}],"axis":{"range":[0,1],"tickformat":".0%"}},"type":"indicator","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-2"><div class="card-body html-fill-item html-fill-container" data-title="Fill rate by level">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-584062d84b30bb8524b5" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-584062d84b30bb8524b5">{"x":{"data":[{"orientation":"v","width":[1,1,1,1,1],"base":[0.59999999999999998,1.6000000000000001,2.6000000000000001,3.6000000000000001,4.5999999999999996],"x":[0.5,0.5,0.5,0.5,0.5],"y":[0.79999999999999993,0.79999999999999982,0.79999999999999982,0.80000000000000027,0.80000000000000071],"text":"","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(229,229,229,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.13095238095238096,0.71783625730994149,0.34689922480620156,0.37894736842105264,0.56666666666666665],"base":[0.59999999999999998,1.6000000000000001,2.6000000000000001,3.6000000000000001,4.5999999999999996],"x":[0.065476190476190479,0.35891812865497075,0.17344961240310078,0.18947368421052632,0.28333333333333333],"y":[0.79999999999999993,0.79999999999999982,0.79999999999999982,0.80000000000000027,0.80000000000000071],"text":["<b>2.5–3.2<\/b><br>Fill rate: 13%<br>Spots filled: 66<br>Spots available: 504<br>","<b>3.0–3.7<\/b><br>Fill rate: 72%<br>Spots filled: 491<br>Spots available: 684<br>","<b>3.5–4.2<\/b><br>Fill rate: 35%<br>Spots filled: 179<br>Spots available: 516<br>","<b>4.0–4.7<\/b><br>Fill rate: 38%<br>Spots filled: 144<br>Spots available: 380<br>","<b>4.5+<\/b><br>Fill rate: 57%<br>Spots filled: 34<br>Spots available: 60<br>"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(70,130,180,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40,"r":20,"b":20,"l":20},"font":{"color":"rgba(0,0,0,1)","family":"Inter","size":14.611872146118724},"title":{"text":"Fill rate by level","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.01,1],"tickmode":"array","ticktext":["0%","25%","50%","75%","100%"],"tickvals":[0,0.25,0.5,0.75,1],"categoryorder":"array","categoryarray":["0%","25%","50%","75%","100%"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,5.5999999999999996],"tickmode":"array","ticktext":["2.5–3.2","3.0–3.7","3.5–4.2","4.0–4.7","4.5+"],"tickvals":[1,2,3,4,5],"categoryorder":"array","categoryarray":["2.5–3.2","3.0–3.7","3.5–4.2","4.0–4.7","4.5+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":14.611872146118724},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4bd828f45179":{"x":{},"y":{},"type":"bar"},"4bd863c93ab2":{"x":{},"y":{},"text":{}}},"cur_data":"4bd828f45179","visdat":{"4bd828f45179":["function (y) ","x"],"4bd863c93ab2":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-4024eaff1ac22fbdfcd8" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-4024eaff1ac22fbdfcd8">{"x":{"data":[{"orientation":"v","width":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"base":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"y":[19,16,15,17,8,7,8,8,12,4,9,7,3,4,1,2,3,2,1],"text":["count: 19<br />n:  1","count: 16<br />n:  2","count: 15<br />n:  3","count: 17<br />n:  4","count:  8<br />n:  5","count:  7<br />n:  6","count:  8<br />n:  7","count:  8<br />n:  8","count: 12<br />n:  9","count:  4<br />n: 10","count:  9<br />n: 11","count:  7<br />n: 12","count:  3<br />n: 13","count:  4<br />n: 14","count:  1<br />n: 15","count:  2<br />n: 16","count:  3<br />n: 17","count:  2<br />n: 18","count:  1<br />n: 19"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(70,130,180,1)","line":{"width":1.8897637795275593,"color":"rgba(255,255,255,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":45.223744292237441,"r":7.3059360730593621,"b":41.643835616438366,"l":37.260273972602747},"font":{"color":"rgba(0,0,0,1)","family":"Inter","size":14.611872146118724},"title":{"text":"How many sessions did each player attend in the month?","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.31,19.5],"tickmode":"array","ticktext":["5","10","15"],"tickvals":[5,9.9999999999999982,15],"categoryorder":"array","categoryarray":["5","10","15"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Number of sessions","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.19,19],"tickmode":"array","ticktext":["0","5","10","15"],"tickvals":[0,5,10,15],"categoryorder":"array","categoryarray":["0","5","10","15"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Number of players","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"4bd83ae7bb4":{"x":{},"type":"bar"}},"cur_data":"4bd83ae7bb4","visdat":{"4bd83ae7bb4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div>
+</div><div id="data-tables" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-data-tables">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header dashboard-card-no-title bslib-navs-card-title">
+
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-9"><li class="nav-item" role="presentation"><a href="#card-tabset-9-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Session detail" aria-selected="true" class="nav-link active">Session detail</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-9-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Player summary" aria-selected="false" class="nav-link">Player summary</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-9-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Player detail" aria-selected="false" class="nav-link">Player detail</a></li></ul></div>
+
+
+
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-9"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-1"><div class="card-body html-fill-item html-fill-container" data-title="Session detail">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-dde13d7eeae2a6da2e61" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-dde13d7eeae2a6da2e61">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"session_id":["19681751","19681803","19692140","19681857","19681910","19681993","19682045","19682099","19682152","19682206","19682258","19692192","19682315","19682368","19682421","19682588","19692244","19682641","19682747","19682800","19682853","19682905","19682965","19683070","19692296","19683122","19683176","19683227","19683348","19692347","19683402","19683455","19683509","19684257","19684364","19684416","19681804","19692141","19681858","19681994","19682046","19682100","19682153","19682259","19692193","19682316","19682369","19682422","19682589","19692245","19682642","19682801","19682854","19682906","19682966","19683071","19692297","19683123","19683177","19683228","19683349","19692348","19683403","19683456","19683510","19683853","19683935","19683987","19684049","19684103","19684258","19684365","19684417","19681805","19692142","19681859","19681912","19681995","19682047","19682101","19682154","19682260","19692194","19682317","19682370","19682423","19682590","19692246","19682643","19682749","19682802","19682855","19682907","19682967","19683072","19692298","19683124","19683178","19683229","19683350","19692349","19683404","19683457","19683511","19683854","19683936","19683988","19684050","19684104","19736961","19684259","19684366","19684418","19681806","19692143","19681860","19681913","19681996","19682048","19682102","19682155","19682261","19692195","19682318","19682371","19682424","19682591","19692247","19682644","19682750","19682803","19682856","19682908","19682968","19683073","19692299","19683179","19683230","19683351","19692350","19683405","19683458","19683512"],"level":["2.5–3.2","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.0–4.7","2.5–3.2","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.5+","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","4.0–4.7","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","4.0–4.7","3.0–3.7","3.5–4.2","4.5+","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","2.5–3.2","3.0–3.7","3.5–4.2","4.0–4.7","4.5+","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.5+","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","2.5–3.2","3.0–3.7","3.5–4.2","4.0–4.7","4.5+","2.5–3.2","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7","3.0–3.7","3.5–4.2","4.5+","3.0–3.7","2.5–3.2","2.5–3.2","4.0–4.7","3.0–3.7","2.5–3.2","3.5–4.2","2.5–3.2","4.0–4.7"],"date":["2025-10-06T12:00:00Z","2025-10-06T12:00:00Z","2025-10-06T14:15:00Z","2025-10-06T14:15:00Z","2025-10-06T16:30:00Z","2025-10-06T16:30:00Z","2025-10-06T20:30:00Z","2025-10-06T20:30:00Z","2025-10-06T20:30:00Z","2025-10-07T12:00:00Z","2025-10-07T12:00:00Z","2025-10-07T14:15:00Z","2025-10-07T14:15:00Z","2025-10-07T16:30:00Z","2025-10-07T16:30:00Z","2025-10-08T12:00:00Z","2025-10-08T14:15:00Z","2025-10-08T14:15:00Z","2025-10-08T16:30:00Z","2025-10-08T16:30:00Z","2025-10-08T20:30:00Z","2025-10-08T20:30:00Z","2025-10-08T20:30:00Z","2025-10-09T12:00:00Z","2025-10-09T14:15:00Z","2025-10-09T14:15:00Z","2025-10-09T16:30:00Z","2025-10-09T16:30:00Z","2025-10-10T12:00:00Z","2025-10-10T14:15:00Z","2025-10-10T14:15:00Z","2025-10-10T16:30:00Z","2025-10-10T16:30:00Z","2025-10-12T12:00:00Z","2025-10-12T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-13T14:15:00Z","2025-10-13T14:15:00Z","2025-10-13T16:30:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-14T12:00:00Z","2025-10-14T14:15:00Z","2025-10-14T14:15:00Z","2025-10-14T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T12:00:00Z","2025-10-15T14:15:00Z","2025-10-15T14:15:00Z","2025-10-15T16:30:00Z","2025-10-15T20:30:00Z","2025-10-15T20:30:00Z","2025-10-15T20:30:00Z","2025-10-16T12:00:00Z","2025-10-16T14:15:00Z","2025-10-16T14:15:00Z","2025-10-16T16:30:00Z","2025-10-16T16:30:00Z","2025-10-17T12:00:00Z","2025-10-17T14:15:00Z","2025-10-17T14:15:00Z","2025-10-17T16:30:00Z","2025-10-17T16:30:00Z","2025-10-18T12:00:00Z","2025-10-18T12:00:00Z","2025-10-18T14:15:00Z","2025-10-18T14:15:00Z","2025-10-18T14:15:00Z","2025-10-19T12:00:00Z","2025-10-19T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-20T14:15:00Z","2025-10-20T14:15:00Z","2025-10-20T16:30:00Z","2025-10-20T16:30:00Z","2025-10-20T20:30:00Z","2025-10-20T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T12:00:00Z","2025-10-21T14:15:00Z","2025-10-21T14:15:00Z","2025-10-21T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T12:00:00Z","2025-10-22T14:15:00Z","2025-10-22T14:15:00Z","2025-10-22T16:30:00Z","2025-10-22T16:30:00Z","2025-10-22T20:30:00Z","2025-10-22T20:30:00Z","2025-10-22T20:30:00Z","2025-10-23T12:00:00Z","2025-10-23T14:15:00Z","2025-10-23T14:15:00Z","2025-10-23T16:30:00Z","2025-10-23T16:30:00Z","2025-10-24T12:00:00Z","2025-10-24T14:15:00Z","2025-10-24T14:15:00Z","2025-10-24T16:30:00Z","2025-10-24T16:30:00Z","2025-10-25T12:00:00Z","2025-10-25T12:00:00Z","2025-10-25T14:15:00Z","2025-10-25T14:15:00Z","2025-10-25T14:15:00Z","2025-10-26T12:00:00Z","2025-10-26T12:00:00Z","2025-10-26T14:15:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-27T14:15:00Z","2025-10-27T14:15:00Z","2025-10-27T16:30:00Z","2025-10-27T16:30:00Z","2025-10-27T20:30:00Z","2025-10-27T20:30:00Z","2025-10-27T20:30:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-28T14:15:00Z","2025-10-28T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T12:00:00Z","2025-10-29T14:15:00Z","2025-10-29T14:15:00Z","2025-10-29T16:30:00Z","2025-10-29T16:30:00Z","2025-10-29T20:30:00Z","2025-10-29T20:30:00Z","2025-10-29T20:30:00Z","2025-10-30T12:00:00Z","2025-10-30T14:15:00Z","2025-10-30T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T12:00:00Z","2025-10-31T14:15:00Z","2025-10-31T14:15:00Z","2025-10-31T16:30:00Z","2025-10-31T16:30:00Z"],"time":["2025-10-06T12:00:00Z","2025-10-06T12:00:00Z","2025-10-06T14:15:00Z","2025-10-06T14:15:00Z","2025-10-06T16:30:00Z","2025-10-06T16:30:00Z","2025-10-06T20:30:00Z","2025-10-06T20:30:00Z","2025-10-06T20:30:00Z","2025-10-07T12:00:00Z","2025-10-07T12:00:00Z","2025-10-07T14:15:00Z","2025-10-07T14:15:00Z","2025-10-07T16:30:00Z","2025-10-07T16:30:00Z","2025-10-08T12:00:00Z","2025-10-08T14:15:00Z","2025-10-08T14:15:00Z","2025-10-08T16:30:00Z","2025-10-08T16:30:00Z","2025-10-08T20:30:00Z","2025-10-08T20:30:00Z","2025-10-08T20:30:00Z","2025-10-09T12:00:00Z","2025-10-09T14:15:00Z","2025-10-09T14:15:00Z","2025-10-09T16:30:00Z","2025-10-09T16:30:00Z","2025-10-10T12:00:00Z","2025-10-10T14:15:00Z","2025-10-10T14:15:00Z","2025-10-10T16:30:00Z","2025-10-10T16:30:00Z","2025-10-12T12:00:00Z","2025-10-12T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-13T14:15:00Z","2025-10-13T14:15:00Z","2025-10-13T16:30:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-14T12:00:00Z","2025-10-14T14:15:00Z","2025-10-14T14:15:00Z","2025-10-14T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T12:00:00Z","2025-10-15T14:15:00Z","2025-10-15T14:15:00Z","2025-10-15T16:30:00Z","2025-10-15T20:30:00Z","2025-10-15T20:30:00Z","2025-10-15T20:30:00Z","2025-10-16T12:00:00Z","2025-10-16T14:15:00Z","2025-10-16T14:15:00Z","2025-10-16T16:30:00Z","2025-10-16T16:30:00Z","2025-10-17T12:00:00Z","2025-10-17T14:15:00Z","2025-10-17T14:15:00Z","2025-10-17T16:30:00Z","2025-10-17T16:30:00Z","2025-10-18T12:00:00Z","2025-10-18T12:00:00Z","2025-10-18T14:15:00Z","2025-10-18T14:15:00Z","2025-10-18T14:15:00Z","2025-10-19T12:00:00Z","2025-10-19T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-20T14:15:00Z","2025-10-20T14:15:00Z","2025-10-20T16:30:00Z","2025-10-20T16:30:00Z","2025-10-20T20:30:00Z","2025-10-20T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T12:00:00Z","2025-10-21T14:15:00Z","2025-10-21T14:15:00Z","2025-10-21T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T12:00:00Z","2025-10-22T14:15:00Z","2025-10-22T14:15:00Z","2025-10-22T16:30:00Z","2025-10-22T16:30:00Z","2025-10-22T20:30:00Z","2025-10-22T20:30:00Z","2025-10-22T20:30:00Z","2025-10-23T12:00:00Z","2025-10-23T14:15:00Z","2025-10-23T14:15:00Z","2025-10-23T16:30:00Z","2025-10-23T16:30:00Z","2025-10-24T12:00:00Z","2025-10-24T14:15:00Z","2025-10-24T14:15:00Z","2025-10-24T16:30:00Z","2025-10-24T16:30:00Z","2025-10-25T12:00:00Z","2025-10-25T12:00:00Z","2025-10-25T14:15:00Z","2025-10-25T14:15:00Z","2025-10-25T14:15:00Z","2025-10-26T12:00:00Z","2025-10-26T12:00:00Z","2025-10-26T14:15:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-27T14:15:00Z","2025-10-27T14:15:00Z","2025-10-27T16:30:00Z","2025-10-27T16:30:00Z","2025-10-27T20:30:00Z","2025-10-27T20:30:00Z","2025-10-27T20:30:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-28T14:15:00Z","2025-10-28T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T12:00:00Z","2025-10-29T14:15:00Z","2025-10-29T14:15:00Z","2025-10-29T16:30:00Z","2025-10-29T16:30:00Z","2025-10-29T20:30:00Z","2025-10-29T20:30:00Z","2025-10-29T20:30:00Z","2025-10-30T12:00:00Z","2025-10-30T14:15:00Z","2025-10-30T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T12:00:00Z","2025-10-31T14:15:00Z","2025-10-31T14:15:00Z","2025-10-31T16:30:00Z","2025-10-31T16:30:00Z"],"weekday":["Mon","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Tue","Tue","Tue","Tue","Tue","Tue","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Thu","Thu","Thu","Thu","Thu","Fri","Fri","Fri","Fri","Fri","Sun","Sun","Sun","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Tue","Tue","Tue","Tue","Tue","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Thu","Thu","Thu","Thu","Thu","Fri","Fri","Fri","Fri","Fri","Sat","Sat","Sat","Sat","Sat","Sun","Sun","Sun","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Tue","Tue","Tue","Tue","Tue","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Thu","Thu","Thu","Thu","Thu","Fri","Fri","Fri","Fri","Fri","Sat","Sat","Sat","Sat","Sat","Sun","Sun","Sun","Sun","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Mon","Tue","Tue","Tue","Tue","Tue","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Wed","Thu","Thu","Thu","Thu","Fri","Fri","Fri","Fri","Fri"],"day_part":["Morning","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Morning","Morning","Morning","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon","Evening","Evening","Evening","Morning","Morning","Afternoon","Afternoon","Morning","Morning","Morning","Afternoon","Afternoon"],"registered":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,15,0,6,0,0,6,18,0,15,0,0,22,0,4,0,0,4,13,0,26,0,0,14,5,10,0,18,7,0,0,6,26,0,0,12,7,0,5,19,6,0,0,6,26,0,7,0,0,0,6,0,0,0,6,13,9,25,0,10,0,11,7,18,6,25,12,0,0,10,24,0,8,0,0,8,7,12,18,11,0,0,0,24,0,0,0,12,6,10,0,5,0,0,7,16,0,26,0,6,0,11,10,13,0,22,12,11,0,9,26,0,0,0,6,7,13,11,20,12,0,15,30,0,0,0,6],"spots":[12,26,12,20,12,12,6,16,12,12,26,12,12,12,16,26,12,16,12,12,6,16,12,26,6,16,12,12,26,12,20,12,12,26,16,16,26,12,20,16,6,16,12,26,12,12,12,16,26,12,16,20,12,12,12,26,12,12,12,12,26,12,20,12,12,12,12,16,12,6,26,16,16,26,12,20,12,12,6,20,6,26,12,12,12,16,26,12,16,12,12,12,12,12,26,12,12,12,12,26,12,20,12,16,12,12,16,12,6,6,22,16,16,26,12,20,12,12,12,16,6,26,12,12,12,16,26,12,16,12,12,6,16,12,26,12,12,12,26,12,20,12,12],"fill_rate":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.730769230769231,0,0.9375,0,0.5,0,0,0.5,0.692307692307692,0,0.9375,0,0,0.846153846153846,0,0.2,0,0,0.153846153846154,0.8125,0,1,0,0,0.875,0.833333333333333,0.625,0,0.692307692307692,0.583333333333333,0,0,0.375,1,0,0,0.6,0.583333333333333,0,0.416666666666667,0.730769230769231,0.5,0,0,0.5,1,0,0.35,0,0,0,0.5,0,0,0,0.230769230769231,0.8125,0.5625,0.961538461538462,0,0.5,0,0.916666666666667,1.16666666666667,0.9,1,0.961538461538462,1,0,0,0.625,0.923076923076923,0,0.5,0,0,0.666666666666667,0.583333333333333,1,0.692307692307692,0.916666666666667,0,0,0,0.923076923076923,0,0,0,0.75,0.5,0.833333333333333,0,0.416666666666667,0,0,0.318181818181818,1,0,1,0,0.3,0,0.916666666666667,0.833333333333333,0.8125,0,0.846153846153846,1,0.916666666666667,0,0.5625,1,0,0,0,0.5,1.16666666666667,0.8125,0.916666666666667,0.769230769230769,1,0,1.25,1.15384615384615,0,0,0,0.5]},"columns":[{"id":"session_id","name":"session_id","type":"character"},{"id":"level","name":"level","type":"character"},{"id":"date","name":"date","type":"Date","format":{"cell":{"date":true},"aggregated":{"date":true}}},{"id":"time","name":"time","type":"Date","format":{"cell":{"time":true},"aggregated":{"time":true}}},{"id":"weekday","name":"weekday","type":["ordered","factor"]},{"id":"day_part","name":"day_part","type":"factor"},{"id":"registered","name":"registered","type":"numeric"},{"id":"spots","name":"spots","type":"numeric"},{"id":"fill_rate","name":"fill_rate","type":"numeric","format":{"cell":{"digits":0,"percent":true},"aggregated":{"digits":0,"percent":true}}}],"filterable":true,"pagination":false,"highlight":true,"dataKey":"23b0ed0489d03ba3abd2d12a376b3b9d"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-2"><div class="card-body html-fill-item html-fill-container" data-title="Player summary">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-ea13ff00ad636ddec00c" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ea13ff00ad636ddec00c">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"player_id":["3490893","3466028","3519607","2544775","3230639","3491064","2535131","2849110","2609265","2607677","2610523","3159317","3537429","2742557","2920650","3416604","2543319","2598945","2722300","2849528","2959247","3183154","3529798","2575502","2600060","2604829","2609255","2610651","2611648","2974670","3179440","3514752","2764108","2850569","3190299","3342822","2552969","2566105","2607703","2940215","2957870","2961447","3117525","3187632","3351010","3565429","3628602","3631069","2541363","2543320","2615982","2721544","3212138","3375017","3547919","3633139","2937705","3117528","3168627","3330547","3440046","3512210","3624028","3630784","2607368","2722199","2936665","2962780","3163757","3231280","3235565","2541578","2939106","2943367","2944193","3002273","3369093","3633649","3634025","2543321","2815234","2913646","2936494","2949622","2971861","3145339","3161742","3161751","3166350","3194222","3360339","3519096","3561310","3633068","3633592","3633984","2581001","2601526","2924694","2964219","3122686","3158111","3161970","3188171","3194861","3375323","3502975","3550997","3623614","3631457","3637980","2541583","3172259","3175320","3188411","3197859","3199792","3311466","3348823","3354226","3359764","3412547","3444084","3466403","3619204","3637345","3640136","2542111","2610332","2928658","2930713","2938935","2959000","2969786","2973469","2981791","3381644","3391175","3502586","3538205","3587646","3614604","3629731","3631351","3634561","3637343"],"n":[19,18,18,17,17,17,16,16,15,14,14,14,14,13,13,13,12,12,12,12,12,12,12,11,11,11,11,11,11,11,11,11,10,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,8,8,8,8,8,8,8,8,7,7,7,7,7,7,7,7,6,6,6,6,6,6,6,5,5,5,5,5,5,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]},"columns":[{"id":"player_id","name":"player_id","type":"character"},{"id":"n","name":"Number of sessions","type":"numeric"}],"filterable":true,"pagination":false,"highlight":true,"dataKey":"7b6a330275182b95aaf03ab63c994867"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-3"><div class="card-body html-fill-item html-fill-container" data-title="Player detail">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-6090750814c67e6d28d9" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6090750814c67e6d28d9">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"player_id":["2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2535131","2541363","2541363","2541363","2541363","2541363","2541363","2541363","2541363","2541578","2541578","2541578","2541578","2541578","2541583","2541583","2542111","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543319","2543320","2543320","2543320","2543320","2543320","2543320","2543320","2543320","2543321","2543321","2543321","2543321","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2544775","2552969","2552969","2552969","2552969","2552969","2552969","2552969","2552969","2552969","2566105","2566105","2566105","2566105","2566105","2566105","2566105","2566105","2566105","2575502","2575502","2575502","2575502","2575502","2575502","2575502","2575502","2575502","2575502","2575502","2581001","2581001","2581001","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2598945","2600060","2600060","2600060","2600060","2600060","2600060","2600060","2600060","2600060","2600060","2600060","2601526","2601526","2601526","2604829","2604829","2604829","2604829","2604829","2604829","2604829","2604829","2604829","2604829","2604829","2607368","2607368","2607368","2607368","2607368","2607368","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607677","2607703","2607703","2607703","2607703","2607703","2607703","2607703","2607703","2607703","2609255","2609255","2609255","2609255","2609255","2609255","2609255","2609255","2609255","2609255","2609255","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2609265","2610332","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610523","2610651","2610651","2610651","2610651","2610651","2610651","2610651","2610651","2610651","2610651","2610651","2611648","2611648","2611648","2611648","2611648","2611648","2611648","2611648","2611648","2611648","2611648","2615982","2615982","2615982","2615982","2615982","2615982","2615982","2615982","2721544","2721544","2721544","2721544","2721544","2721544","2721544","2721544","2722199","2722199","2722199","2722199","2722199","2722199","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2722300","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2742557","2764108","2764108","2764108","2764108","2764108","2764108","2764108","2764108","2764108","2764108","2815234","2815234","2815234","2815234","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849110","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2849528","2850569","2850569","2850569","2850569","2850569","2850569","2850569","2850569","2850569","2850569","2913646","2913646","2913646","2913646","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2920650","2924694","2924694","2924694","2928658","2930713","2936494","2936494","2936494","2936494","2936665","2936665","2936665","2936665","2936665","2936665","2937705","2937705","2937705","2937705","2937705","2937705","2937705","2938935","2939106","2939106","2939106","2939106","2939106","2940215","2940215","2940215","2940215","2940215","2940215","2940215","2940215","2940215","2943367","2943367","2943367","2943367","2943367","2944193","2944193","2944193","2944193","2944193","2949622","2949622","2949622","2949622","2957870","2957870","2957870","2957870","2957870","2957870","2957870","2957870","2957870","2959000","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2959247","2961447","2961447","2961447","2961447","2961447","2961447","2961447","2961447","2961447","2962780","2962780","2962780","2962780","2962780","2962780","2964219","2964219","2964219","2969786","2971861","2971861","2971861","2971861","2973469","2974670","2974670","2974670","2974670","2974670","2974670","2974670","2974670","2974670","2974670","2974670","2981791","3002273","3002273","3002273","3002273","3002273","3117525","3117525","3117525","3117525","3117525","3117525","3117525","3117525","3117525","3117528","3117528","3117528","3117528","3117528","3117528","3117528","3122686","3122686","3122686","3145339","3145339","3145339","3145339","3158111","3158111","3158111","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3159317","3161742","3161742","3161742","3161742","3161751","3161751","3161751","3161751","3161970","3161970","3161970","3163757","3163757","3163757","3163757","3163757","3163757","3166350","3166350","3166350","3166350","3168627","3168627","3168627","3168627","3168627","3168627","3168627","3172259","3172259","3175320","3175320","3179440","3179440","3179440","3179440","3179440","3179440","3179440","3179440","3179440","3179440","3179440","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3183154","3187632","3187632","3187632","3187632","3187632","3187632","3187632","3187632","3187632","3188171","3188171","3188171","3188411","3188411","3190299","3190299","3190299","3190299","3190299","3190299","3190299","3190299","3190299","3190299","3194222","3194222","3194222","3194222","3194861","3194861","3194861","3197859","3197859","3199792","3199792","3212138","3212138","3212138","3212138","3212138","3212138","3212138","3212138","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3230639","3231280","3231280","3231280","3231280","3231280","3231280","3235565","3235565","3235565","3235565","3235565","3235565","3311466","3311466","3330547","3330547","3330547","3330547","3330547","3330547","3330547","3342822","3342822","3342822","3342822","3342822","3342822","3342822","3342822","3342822","3342822","3348823","3348823","3351010","3351010","3351010","3351010","3351010","3351010","3351010","3351010","3351010","3354226","3354226","3359764","3359764","3360339","3360339","3360339","3360339","3369093","3369093","3369093","3369093","3369093","3375017","3375017","3375017","3375017","3375017","3375017","3375017","3375017","3375323","3375323","3375323","3381644","3391175","3412547","3412547","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3416604","3440046","3440046","3440046","3440046","3440046","3440046","3440046","3444084","3444084","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466028","3466403","3466403","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3490893","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3491064","3502586","3502975","3502975","3502975","3512210","3512210","3512210","3512210","3512210","3512210","3512210","3514752","3514752","3514752","3514752","3514752","3514752","3514752","3514752","3514752","3514752","3514752","3519096","3519096","3519096","3519096","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3519607","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3529798","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3537429","3538205","3547919","3547919","3547919","3547919","3547919","3547919","3547919","3547919","3550997","3550997","3550997","3561310","3561310","3561310","3561310","3565429","3565429","3565429","3565429","3565429","3565429","3565429","3565429","3565429","3587646","3614604","3619204","3619204","3623614","3623614","3623614","3624028","3624028","3624028","3624028","3624028","3624028","3624028","3628602","3628602","3628602","3628602","3628602","3628602","3628602","3628602","3628602","3629731","3630784","3630784","3630784","3630784","3630784","3630784","3630784","3631069","3631069","3631069","3631069","3631069","3631069","3631069","3631069","3631069","3631351","3631457","3631457","3631457","3633068","3633068","3633068","3633068","3633139","3633139","3633139","3633139","3633139","3633139","3633139","3633139","3633592","3633592","3633592","3633592","3633649","3633649","3633649","3633649","3633649","3633984","3633984","3633984","3633984","3634025","3634025","3634025","3634025","3634025","3634561","3637343","3637345","3637345","3637980","3637980","3637980","3640136","3640136"],"level":["4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.5+","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","3.0–3.7","3.5–4.2","3.0–3.7","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","4.5+","4.0–4.7","4.0–4.7","4.5+","4.0–4.7","4.5+","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","2.5–3.2","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.5+","4.0–4.7","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.0–4.7","4.5+","4.0–4.7","4.5+","4.0–4.7","4.5+","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.5+","4.0–4.7","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","4.0–4.7","3.0–3.7","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.0–3.7","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.5+","4.5+","4.0–4.7","4.0–4.7","4.5+","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","4.5+","4.0–4.7","4.5+","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","2.5–3.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","3.5–4.2","4.5+","3.5–4.2","3.5–4.2","3.5–4.2","4.5+","4.0–4.7","3.5–4.2","4.5+","4.5+","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.5+","4.0–4.7","3.5–4.2","3.5–4.2","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.0–3.7","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.5–4.2","3.5–4.2","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","2.5–3.2","4.5+","4.0–4.7","4.0–4.7","4.5+","4.0–4.7","4.5+","2.5–3.2","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","4.5+","4.5+","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","4.5+","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","4.0–4.7","2.5–3.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","2.5–3.2","3.0–3.7","2.5–3.2","2.5–3.2","3.0–3.7","2.5–3.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.5+","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","4.0–4.7","4.5+","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.0–3.7","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","4.0–4.7","4.0–4.7","4.0–4.7","4.5+","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.0–4.7","4.0–4.7","3.5–4.2","3.5–4.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","3.5–4.2","4.0–4.7","4.0–4.7","3.5–4.2","3.5–4.2","4.0–4.7","3.5–4.2","3.5–4.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","2.5–3.2","2.5–3.2","3.0–3.7","2.5–3.2","2.5–3.2","2.5–3.2","2.5–3.2","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","4.0–4.7","4.0–4.7","4.0–4.7","4.0–4.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.0–3.7","3.5–4.2","2.5–3.2","3.5–4.2","4.0–4.7","3.0–3.7","2.5–3.2","2.5–3.2","3.0–3.7","3.5–4.2"],"date":["2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-16T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-15T20:30:00Z","2025-10-19T14:15:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-30T16:30:00Z","2025-10-22T20:30:00Z","2025-10-30T16:30:00Z","2025-10-13T20:30:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-16T16:30:00Z","2025-10-18T14:15:00Z","2025-10-20T16:30:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-29T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T20:30:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-18T12:00:00Z","2025-10-19T14:15:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-13T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-08T16:30:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-27T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-06T16:30:00Z","2025-10-08T14:15:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-27T16:30:00Z","2025-10-31T16:30:00Z","2025-10-08T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-19T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-07T16:30:00Z","2025-10-08T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-28T14:15:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-19T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-06T16:30:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T16:30:00Z","2025-10-16T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-25T14:15:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-26T14:15:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-19T14:15:00Z","2025-10-21T12:00:00Z","2025-10-28T12:00:00Z","2025-10-31T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T14:15:00Z","2025-10-24T12:00:00Z","2025-10-27T20:30:00Z","2025-10-30T14:15:00Z","2025-10-31T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-16T16:30:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-31T16:30:00Z","2025-10-19T14:15:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-21T16:30:00Z","2025-10-24T16:30:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-31T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-10T16:30:00Z","2025-10-21T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-13T12:00:00Z","2025-10-14T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T14:15:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-18T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-18T12:00:00Z","2025-10-21T16:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T20:30:00Z","2025-10-15T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-10T12:00:00Z","2025-10-14T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-14T14:15:00Z","2025-10-14T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T20:30:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-08T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-16T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T14:15:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-30T14:15:00Z","2025-10-10T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-20T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-27T20:30:00Z","2025-10-08T14:15:00Z","2025-10-10T14:15:00Z","2025-10-13T14:15:00Z","2025-10-15T16:30:00Z","2025-10-27T16:30:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T14:15:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-25T12:00:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-13T20:30:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-26T12:00:00Z","2025-10-27T20:30:00Z","2025-10-30T14:15:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-10T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-30T16:30:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-29T16:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T14:15:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-27T14:15:00Z","2025-10-27T20:30:00Z","2025-10-28T14:15:00Z","2025-10-20T16:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-31T16:30:00Z","2025-10-08T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-26T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-15T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T20:30:00Z","2025-10-09T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-20T20:30:00Z","2025-10-29T20:30:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-30T16:30:00Z","2025-10-08T14:15:00Z","2025-10-15T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-06T12:00:00Z","2025-10-08T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-08T12:00:00Z","2025-10-08T14:15:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T20:30:00Z","2025-10-23T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-31T14:15:00Z","2025-10-08T12:00:00Z","2025-10-12T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T14:15:00Z","2025-10-08T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-23T14:15:00Z","2025-10-27T20:30:00Z","2025-10-09T14:15:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-08T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-24T14:15:00Z","2025-10-31T14:15:00Z","2025-10-09T14:15:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-20T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-26T12:00:00Z","2025-10-29T20:30:00Z","2025-10-08T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T14:15:00Z","2025-10-12T14:15:00Z","2025-10-24T16:30:00Z","2025-10-31T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-06T12:00:00Z","2025-10-15T20:30:00Z","2025-10-17T12:00:00Z","2025-10-20T14:15:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T16:30:00Z","2025-10-14T14:15:00Z","2025-10-14T14:15:00Z","2025-10-22T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T14:15:00Z","2025-10-10T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T14:15:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T14:15:00Z","2025-10-22T20:30:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-28T14:15:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-20T20:30:00Z","2025-10-13T20:30:00Z","2025-10-26T14:15:00Z","2025-10-31T14:15:00Z","2025-10-20T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T12:00:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-25T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-10T12:00:00Z","2025-10-10T14:15:00Z","2025-10-15T14:15:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-24T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T14:15:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-16T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-15T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-12T14:15:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-15T16:30:00Z","2025-10-20T16:30:00Z","2025-10-20T14:15:00Z","2025-10-26T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-13T12:00:00Z","2025-10-17T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-22T14:15:00Z","2025-10-25T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-13T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-28T14:15:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-30T14:15:00Z","2025-10-31T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T14:15:00Z","2025-10-21T14:15:00Z","2025-10-24T12:00:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-30T14:15:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-16T16:30:00Z","2025-10-21T16:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-19T14:15:00Z","2025-10-24T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-31T14:15:00Z","2025-10-30T12:00:00Z","2025-10-31T14:15:00Z"],"time":["2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-16T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-15T20:30:00Z","2025-10-19T14:15:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-30T16:30:00Z","2025-10-22T20:30:00Z","2025-10-30T16:30:00Z","2025-10-13T20:30:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-16T16:30:00Z","2025-10-18T14:15:00Z","2025-10-20T16:30:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-29T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T20:30:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-18T12:00:00Z","2025-10-19T14:15:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-13T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-08T16:30:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-27T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-06T16:30:00Z","2025-10-08T14:15:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-27T16:30:00Z","2025-10-31T16:30:00Z","2025-10-08T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-19T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-07T16:30:00Z","2025-10-08T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-28T14:15:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-19T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-06T16:30:00Z","2025-10-08T16:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T16:30:00Z","2025-10-16T16:30:00Z","2025-10-19T14:15:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-25T14:15:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-26T14:15:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-19T14:15:00Z","2025-10-21T12:00:00Z","2025-10-28T12:00:00Z","2025-10-31T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T14:15:00Z","2025-10-24T12:00:00Z","2025-10-27T20:30:00Z","2025-10-30T14:15:00Z","2025-10-31T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-16T16:30:00Z","2025-10-20T16:30:00Z","2025-10-21T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-31T16:30:00Z","2025-10-19T14:15:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-12T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-21T16:30:00Z","2025-10-24T16:30:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-31T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-10T16:30:00Z","2025-10-21T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T16:30:00Z","2025-10-13T12:00:00Z","2025-10-14T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T14:15:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-18T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-18T12:00:00Z","2025-10-21T16:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T20:30:00Z","2025-10-15T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-10T12:00:00Z","2025-10-14T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-14T14:15:00Z","2025-10-14T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T20:30:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-08T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-16T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T14:15:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-30T14:15:00Z","2025-10-10T12:00:00Z","2025-10-16T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-20T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-27T20:30:00Z","2025-10-08T14:15:00Z","2025-10-10T14:15:00Z","2025-10-13T14:15:00Z","2025-10-15T16:30:00Z","2025-10-27T16:30:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T16:30:00Z","2025-10-22T14:15:00Z","2025-10-24T16:30:00Z","2025-10-25T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T14:15:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-25T12:00:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-13T20:30:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-26T12:00:00Z","2025-10-27T20:30:00Z","2025-10-30T14:15:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-10T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-30T16:30:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-29T16:30:00Z","2025-10-13T20:30:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T14:15:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-27T14:15:00Z","2025-10-27T20:30:00Z","2025-10-28T14:15:00Z","2025-10-20T16:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-31T16:30:00Z","2025-10-08T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-14T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-21T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-26T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-15T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T20:30:00Z","2025-10-09T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-20T20:30:00Z","2025-10-29T20:30:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-30T16:30:00Z","2025-10-08T14:15:00Z","2025-10-15T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-06T12:00:00Z","2025-10-08T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-08T12:00:00Z","2025-10-08T14:15:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T20:30:00Z","2025-10-23T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-31T14:15:00Z","2025-10-08T12:00:00Z","2025-10-12T12:00:00Z","2025-10-23T12:00:00Z","2025-10-25T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T14:15:00Z","2025-10-08T20:30:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-23T14:15:00Z","2025-10-27T20:30:00Z","2025-10-09T14:15:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-08T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T20:30:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-24T14:15:00Z","2025-10-31T14:15:00Z","2025-10-09T14:15:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-20T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-26T12:00:00Z","2025-10-29T20:30:00Z","2025-10-08T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T14:15:00Z","2025-10-12T14:15:00Z","2025-10-24T16:30:00Z","2025-10-31T14:15:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-06T12:00:00Z","2025-10-15T20:30:00Z","2025-10-17T12:00:00Z","2025-10-20T14:15:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T16:30:00Z","2025-10-14T14:15:00Z","2025-10-14T14:15:00Z","2025-10-22T20:30:00Z","2025-10-26T14:15:00Z","2025-10-08T14:15:00Z","2025-10-10T14:15:00Z","2025-10-12T14:15:00Z","2025-10-13T14:15:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-29T20:30:00Z","2025-10-20T20:30:00Z","2025-10-21T14:15:00Z","2025-10-22T20:30:00Z","2025-10-23T14:15:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-28T14:15:00Z","2025-10-20T20:30:00Z","2025-10-27T20:30:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T12:00:00Z","2025-10-09T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-19T14:15:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-20T20:30:00Z","2025-10-13T20:30:00Z","2025-10-26T14:15:00Z","2025-10-31T14:15:00Z","2025-10-20T16:30:00Z","2025-10-22T20:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-30T16:30:00Z","2025-10-31T16:30:00Z","2025-10-09T12:00:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-25T12:00:00Z","2025-10-30T12:00:00Z","2025-10-13T14:15:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-25T12:00:00Z","2025-10-08T12:00:00Z","2025-10-10T12:00:00Z","2025-10-12T14:15:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-22T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T14:15:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-10T12:00:00Z","2025-10-10T14:15:00Z","2025-10-15T14:15:00Z","2025-10-15T16:30:00Z","2025-10-17T14:15:00Z","2025-10-20T14:15:00Z","2025-10-22T14:15:00Z","2025-10-24T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-14T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-26T12:00:00Z","2025-10-27T12:00:00Z","2025-10-28T12:00:00Z","2025-10-29T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T14:15:00Z","2025-10-09T14:15:00Z","2025-10-15T16:30:00Z","2025-10-16T16:30:00Z","2025-10-17T14:15:00Z","2025-10-19T14:15:00Z","2025-10-27T16:30:00Z","2025-10-28T16:30:00Z","2025-10-29T20:30:00Z","2025-10-15T20:30:00Z","2025-10-22T20:30:00Z","2025-10-29T20:30:00Z","2025-10-12T14:15:00Z","2025-10-20T20:30:00Z","2025-10-26T14:15:00Z","2025-10-27T20:30:00Z","2025-10-13T20:30:00Z","2025-10-15T20:30:00Z","2025-10-18T12:00:00Z","2025-10-19T12:00:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-25T12:00:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-15T16:30:00Z","2025-10-20T16:30:00Z","2025-10-20T14:15:00Z","2025-10-26T14:15:00Z","2025-10-23T14:15:00Z","2025-10-28T14:15:00Z","2025-10-30T14:15:00Z","2025-10-13T12:00:00Z","2025-10-17T12:00:00Z","2025-10-23T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-30T12:00:00Z","2025-10-31T12:00:00Z","2025-10-08T14:15:00Z","2025-10-09T14:15:00Z","2025-10-13T16:30:00Z","2025-10-15T16:30:00Z","2025-10-20T20:30:00Z","2025-10-22T14:15:00Z","2025-10-25T14:15:00Z","2025-10-27T14:15:00Z","2025-10-28T14:15:00Z","2025-10-13T12:00:00Z","2025-10-10T12:00:00Z","2025-10-13T12:00:00Z","2025-10-15T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T12:00:00Z","2025-10-28T14:15:00Z","2025-10-12T12:00:00Z","2025-10-13T12:00:00Z","2025-10-16T12:00:00Z","2025-10-17T12:00:00Z","2025-10-20T12:00:00Z","2025-10-21T14:15:00Z","2025-10-23T14:15:00Z","2025-10-30T14:15:00Z","2025-10-31T14:15:00Z","2025-10-10T12:00:00Z","2025-10-13T14:15:00Z","2025-10-21T14:15:00Z","2025-10-24T12:00:00Z","2025-10-14T14:15:00Z","2025-10-16T14:15:00Z","2025-10-21T14:15:00Z","2025-10-30T14:15:00Z","2025-10-14T12:00:00Z","2025-10-15T12:00:00Z","2025-10-20T12:00:00Z","2025-10-22T12:00:00Z","2025-10-24T12:00:00Z","2025-10-27T12:00:00Z","2025-10-29T12:00:00Z","2025-10-31T12:00:00Z","2025-10-16T16:30:00Z","2025-10-21T16:30:00Z","2025-10-24T16:30:00Z","2025-10-27T16:30:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-17T12:00:00Z","2025-10-21T12:00:00Z","2025-10-28T12:00:00Z","2025-10-30T12:00:00Z","2025-10-15T20:30:00Z","2025-10-20T20:30:00Z","2025-10-22T20:30:00Z","2025-10-27T20:30:00Z","2025-10-29T20:30:00Z","2025-10-19T14:15:00Z","2025-10-24T14:15:00Z","2025-10-29T20:30:00Z","2025-10-30T16:30:00Z","2025-10-28T12:00:00Z","2025-10-28T14:15:00Z","2025-10-31T14:15:00Z","2025-10-30T12:00:00Z","2025-10-31T14:15:00Z"],"weekday":["Wed","Thu","Mon","Tue","Thu","Sun","Mon","Tue","Wed","Fri","Sat","Mon","Tue","Wed","Thu","Fri","Sun","Wed","Mon","Wed","Sun","Mon","Tue","Thu","Wed","Sun","Tue","Wed","Thu","Wed","Thu","Mon","Wed","Thu","Mon","Tue","Thu","Sat","Mon","Fri","Sat","Mon","Wed","Fri","Thu","Mon","Thu","Tue","Thu","Sat","Tue","Thu","Tue","Mon","Wed","Fri","Wed","Thu","Mon","Tue","Thu","Fri","Sat","Sun","Tue","Wed","Thu","Fri","Mon","Tue","Wed","Thu","Fri","Wed","Mon","Sun","Mon","Wed","Fri","Mon","Tue","Wed","Wed","Mon","Tue","Sun","Mon","Tue","Mon","Wed","Thu","Mon","Wed","Wed","Thu","Mon","Tue","Sun","Mon","Wed","Mon","Fri","Wed","Thu","Fri","Thu","Tue","Wed","Thu","Sun","Wed","Thu","Sat","Sun","Mon","Tue","Fri","Wed","Fri","Mon","Wed","Fri","Mon","Wed","Fri","Mon","Wed","Fri","Wed","Mon","Wed","Thu","Fri","Mon","Wed","Thu","Mon","Tue","Wed","Fri","Mon","Tue","Tue","Wed","Mon","Wed","Tue","Wed","Sun","Mon","Wed","Fri","Sun","Mon","Wed","Thu","Sun","Mon","Tue","Wed","Thu","Fri","Wed","Thu","Mon","Mon","Wed","Fri","Tue","Thu","Fri","Mon","Tue","Wed","Sun","Tue","Wed","Fri","Sun","Tue","Wed","Fri","Mon","Wed","Thu","Mon","Tue","Wed","Thu","Sun","Mon","Tue","Sat","Tue","Wed","Thu","Fri","Sun","Wed","Thu","Fri","Tue","Wed","Thu","Fri","Mon","Tue","Wed","Tue","Wed","Thu","Fri","Wed","Thu","Fri","Wed","Thu","Fri","Wed","Thu","Fri","Mon","Thu","Wed","Fri","Mon","Wed","Fri","Mon","Tue","Wed","Fri","Mon","Wed","Wed","Thu","Fri","Sun","Mon","Tue","Tue","Wed","Wed","Fri","Sun","Wed","Sun","Tue","Tue","Fri","Thu","Mon","Mon","Sun","Mon","Wed","Thu","Mon","Tue","Fri","Sun","Mon","Tue","Thu","Fri","Mon","Thu","Fri","Thu","Fri","Sun","Mon","Tue","Thu","Fri","Sun","Sun","Mon","Tue","Wed","Fri","Thu","Mon","Thu","Mon","Tue","Wed","Fri","Mon","Tue","Fri","Sun","Wed","Tue","Wed","Wed","Thu","Fri","Mon","Tue","Wed","Thu","Mon","Tue","Wed","Thu","Fri","Mon","Tue","Wed","Fri","Wed","Thu","Sun","Wed","Fri","Mon","Tue","Fri","Tue","Wed","Thu","Fri","Fri","Mon","Wed","Fri","Mon","Wed","Fri","Mon","Wed","Fri","Fri","Tue","Tue","Wed","Mon","Tue","Wed","Fri","Sun","Mon","Tue","Wed","Fri","Sun","Tue","Wed","Fri","Sat","Sun","Mon","Sat","Tue","Mon","Mon","Mon","Wed","Wed","Wed","Sun","Mon","Wed","Wed","Fri","Tue","Mon","Tue","Mon","Wed","Fri","Tue","Tue","Mon","Tue","Mon","Tue","Thu","Mon","Wed","Thu","Mon","Wed","Mon","Wed","Thu","Mon","Sun","Mon","Wed","Mon","Tue","Thu","Tue","Tue","Thu","Wed","Mon","Wed","Wed","Thu","Tue","Wed","Thu","Fri","Sat","Mon","Wed","Fri","Wed","Wed","Thu","Tue","Thu","Fri","Tue","Wed","Thu","Fri","Mon","Tue","Thu","Mon","Mon","Wed","Mon","Tue","Wed","Mon","Wed","Thu","Fri","Thu","Mon","Tue","Wed","Thu","Mon","Thu","Tue","Mon","Wed","Fri","Mon","Wed","Mon","Sun","Mon","Wed","Mon","Wed","Fri","Sat","Mon","Tue","Thu","Fri","Sat","Wed","Sat","Wed","Sat","Mon","Mon","Wed","Sat","Mon","Wed","Sat","Sun","Mon","Wed","Mon","Thu","Tue","Thu","Sun","Mon","Thu","Wed","Thu","Fri","Mon","Wed","Mon","Wed","Mon","Mon","Sun","Wed","Thu","Mon","Tue","Thu","Fri","Mon","Tue","Wed","Thu","Sat","Mon","Wed","Thu","Thu","Wed","Mon","Thu","Thu","Wed","Mon","Wed","Mon","Mon","Sun","Wed","Fri","Mon","Mon","Mon","Tue","Mon","Fri","Mon","Fri","Wed","Mon","Wed","Mon","Wed","Mon","Wed","Mon","Mon","Wed","Wed","Thu","Mon","Tue","Wed","Mon","Tue","Wed","Fri","Sun","Wed","Thu","Wed","Thu","Thu","Fri","Mon","Wed","Thu","Fri","Mon","Wed","Thu","Fri","Wed","Thu","Wed","Sun","Mon","Tue","Mon","Tue","Wed","Thu","Sun","Mon","Mon","Wed","Fri","Mon","Tue","Wed","Mon","Tue","Thu","Fri","Wed","Thu","Mon","Wed","Mon","Wed","Mon","Wed","Thu","Wed","Wed","Tue","Thu","Mon","Wed","Mon","Tue","Fri","Mon","Mon","Thu","Wed","Wed","Fri","Sun","Mon","Wed","Fri","Sun","Mon","Wed","Thu","Sun","Mon","Tue","Tue","Wed","Fri","Wed","Sun","Thu","Sat","Wed","Thu","Wed","Sun","Mon","Wed","Tue","Wed","Thu","Mon","Thu","Tue","Thu","Tue","Thu","Tue","Thu","Wed","Sun","Mon","Wed","Fri","Sun","Mon","Tue","Wed","Thu","Fri","Fri","Thu","Tue","Thu","Mon","Tue","Thu","Sat","Tue","Thu","Sun","Wed","Wed","Wed","Wed","Sun","Fri","Fri","Tue","Thu","Sat","Tue","Thu","Mon","Wed","Fri","Mon","Fri","Mon","Wed","Fri","Wed","Fri","Mon","Tue","Tue","Wed","Sun","Wed","Fri","Sun","Mon","Wed","Fri","Sun","Mon","Wed","Sun","Mon","Tue","Wed","Mon","Tue","Wed","Thu","Sat","Mon","Tue","Mon","Mon","Wed","Fri","Sun","Mon","Wed","Thu","Fri","Mon","Tue","Wed","Thu","Fri","Sun","Mon","Tue","Wed","Thu","Fri","Wed","Wed","Wed","Thu","Fri","Mon","Tue","Wed","Thu","Fri","Sun","Mon","Tue","Wed","Fri","Sat","Mon","Tue","Wed","Thu","Fri","Wed","Thu","Fri","Mon","Tue","Wed","Fri","Sun","Mon","Tue","Wed","Fri","Sat","Tue","Wed","Thu","Fri","Mon","Mon","Sun","Fri","Mon","Wed","Fri","Mon","Tue","Thu","Fri","Thu","Sun","Mon","Tue","Thu","Fri","Tue","Thu","Fri","Sat","Thu","Mon","Wed","Fri","Sat","Wed","Fri","Sun","Mon","Wed","Thu","Fri","Mon","Tue","Wed","Thu","Fri","Sun","Mon","Tue","Wed","Thu","Fri","Wed","Thu","Fri","Fri","Wed","Wed","Fri","Mon","Wed","Fri","Mon","Tue","Sun","Mon","Tue","Thu","Fri","Mon","Tue","Thu","Fri","Sun","Mon","Tue","Wed","Thu","Fri","Thu","Wed","Thu","Fri","Sun","Mon","Tue","Wed","Wed","Wed","Wed","Sun","Mon","Sun","Mon","Mon","Wed","Sat","Sun","Mon","Wed","Sat","Mon","Wed","Wed","Mon","Mon","Sun","Thu","Tue","Thu","Mon","Fri","Thu","Fri","Mon","Thu","Fri","Wed","Thu","Mon","Wed","Mon","Wed","Sat","Mon","Tue","Mon","Fri","Mon","Wed","Fri","Mon","Tue","Tue","Sun","Mon","Thu","Fri","Mon","Tue","Thu","Thu","Fri","Fri","Mon","Tue","Fri","Tue","Thu","Tue","Thu","Tue","Wed","Mon","Wed","Fri","Mon","Wed","Fri","Thu","Tue","Fri","Mon","Wed","Mon","Wed","Mon","Wed","Fri","Tue","Tue","Thu","Wed","Mon","Wed","Mon","Wed","Sun","Fri","Wed","Thu","Tue","Tue","Fri","Thu","Fri"],"session_id":["19682800","19683122","19681994","19682422","19683228","19684417","19681995","19682423","19682967","19683511","19684050","19681996","19682424","19682803","19683230","19683512","19684364","19682589","19682101","19682590","19684366","19682102","19682261","19683073","19682966","19684417","19682423","19682967","19683230","19682967","19683230","19682100","19682800","19683122","19681994","19682422","19683228","19684049","19681995","19683511","19684050","19681996","19682803","19683512","19692296","19682046","19692297","19692194","19692298","19683854","19692195","19692299","19682260","19681806","19682591","19683351","19682588","19683070","19681804","19682259","19683071","19683349","19683935","19684365","19682260","19682590","19683072","19683350","19681806","19682261","19682591","19683073","19683351","19682641","19681994","19684365","19681859","19682643","19683511","19681860","19682318","19682908","19682800","19681994","19682422","19684417","19681995","19682423","19681996","19682803","19683230","19681993","19682641","19682800","19683122","19681994","19682422","19684417","19681995","19682643","19681996","19683512","19682800","19683230","19683512","19683070","19682259","19682589","19683071","19684258","19682590","19683072","19683936","19684259","19681806","19682261","19683351","19682588","19683348","19681804","19682589","19683349","19681805","19682590","19683350","19681806","19682591","19683351","19682966","19682154","19682968","19683070","19683348","19681804","19682589","19683071","19681805","19682260","19682590","19683350","19681806","19682261","19682421","19682965","19682154","19682967","19682424","19682968","19684364","19681804","19682589","19683349","19684365","19681805","19682590","19683072","19684366","19681806","19682261","19682591","19683073","19683351","19682641","19683122","19681994","19681995","19682643","19683511","19682318","19683230","19683512","19681804","19682259","19682589","19684258","19682260","19682590","19683350","19684259","19682261","19682591","19683351","19681993","19682800","19683122","19681994","19682422","19682801","19683228","19684417","19681995","19682423","19684050","19682424","19682803","19683230","19683512","19684366","19682588","19683070","19683348","19682259","19682589","19683071","19683349","19681805","19682260","19682590","19682261","19682591","19683073","19683351","19682588","19683070","19683348","19682589","19683071","19683349","19682590","19683072","19683350","19681806","19683073","19682588","19683348","19681804","19682589","19683349","19681805","19682260","19682590","19683350","19681806","19682591","19682588","19683070","19683348","19684364","19681804","19682261","19682318","19682591","19682588","19683348","19684364","19682589","19684365","19682260","19682261","19683351","19683070","19682100","19682101","19684366","19682102","19682908","19683070","19681804","19682259","19683349","19684258","19681805","19682260","19692298","19683350","19682048","19692299","19683351","19683070","19683348","19684364","19681804","19682259","19683071","19683349","19684365","19684366","19681806","19682261","19682591","19683351","19683122","19681994","19683228","19681995","19682423","19682643","19683511","19681996","19682424","19683512","19684417","19682967","19682424","19682968","19682588","19683070","19683348","19681804","19682259","19682589","19683071","19681805","19682260","19682590","19683072","19683350","19681806","19682261","19682591","19683351","19682641","19683122","19684416","19682589","19683403","19681859","19682423","19683511","19682318","19682908","19683230","19683405","19683348","19681804","19682589","19683349","19681805","19682590","19683350","19681806","19682591","19683351","19683509","19682423","19682424","19682803","19681804","19692193","19682589","19683349","19684258","19681805","19692194","19682590","19683350","19684259","19692195","19682591","19683351","19683935","19684365","19681859","19683935","19682423","19682100","19682101","19682102","19682908","19682965","19682966","19684417","19682154","19682967","19682968","19683348","19682259","19681805","19682260","19681806","19682591","19683351","19692193","19682259","19681805","19682260","19681806","19682261","19683070","19682100","19682589","19683071","19682101","19682590","19682102","19682591","19683073","19682100","19684365","19682101","19682907","19682102","19692193","19692297","19692194","19692195","19692299","19682965","19682154","19682967","19682968","19683071","19682260","19682590","19683072","19683350","19683936","19681806","19682591","19683351","19682965","19682588","19683070","19682259","19683071","19683349","19682260","19682590","19683072","19683350","19681806","19682261","19683073","19682046","19682100","19682854","19682047","19692194","19682855","19682048","19682856","19692299","19683348","19683071","19681805","19682260","19682590","19683072","19692142","19692298","19692195","19682102","19682641","19683402","19681858","19682801","19681996","19684364","19681994","19682801","19681995","19682643","19683511","19684050","19681996","19682318","19683230","19683512","19683936","19682854","19683935","19682855","19683936","19682048","19682046","19682854","19683935","19682047","19682855","19683936","19684259","19682048","19682856","19682046","19692297","19692194","19692298","19684259","19682048","19692299","19682641","19683122","19683402","19682101","19682907","19682102","19682908","19682100","19682101","19684366","19682588","19683070","19681804","19682259","19683071","19683349","19681805","19682260","19682590","19683072","19683936","19681806","19682591","19683073","19683122","19682801","19682101","19683230","19683122","19682801","19682101","19682803","19682100","19682101","19684366","19682641","19683403","19681859","19681860","19682102","19682318","19681995","19683511","19681996","19683512","19682905","19682100","19682966","19682101","19682907","19682102","19682968","19682154","19682102","19682967","19682968","19683122","19681994","19682422","19682801","19682101","19682423","19682967","19683511","19684366","19682908","19683230","19682588","19683070","19683071","19683349","19681805","19682590","19683072","19683350","19681806","19682591","19683073","19683351","19682588","19683070","19682589","19684258","19681805","19682260","19681806","19682261","19682908","19683122","19684364","19681994","19682047","19682908","19683348","19681804","19682259","19682589","19681805","19682260","19683072","19683350","19682591","19683073","19682101","19682907","19682102","19682908","19681859","19682643","19683230","19682641","19682589","19692195","19692299","19681803","19682588","19681804","19682259","19683349","19681805","19681806","19683073","19682588","19682641","19683348","19684364","19681804","19682589","19683403","19684365","19681859","19682907","19683072","19684366","19681860","19682261","19682318","19682908","19683405","19682588","19684257","19683072","19683854","19682591","19692299","19682965","19684417","19682154","19682967","19682424","19682968","19692298","19682048","19692296","19692193","19692297","19692194","19692298","19692195","19692299","19682641","19684364","19681994","19682801","19683403","19684365","19682101","19682318","19682908","19683230","19692349","19692350","19692296","19692193","19692297","19692142","19692194","19692298","19683854","19692195","19692299","19684259","19682856","19682965","19682968","19682641","19684416","19683511","19683405","19692194","19692298","19683854","19692195","19692299","19681803","19682966","19683349","19681859","19683350","19681806","19682591","19683351","19682641","19683348","19681994","19692193","19682316","19682907","19684366","19682641","19683402","19684364","19681858","19682801","19683403","19684365","19681859","19682907","19684366","19681860","19682318","19682908","19682047","19692194","19682855","19692298","19683854","19682048","19692195","19682101","19682102","19682588","19683348","19684364","19681804","19682589","19683071","19683349","19681805","19682260","19682590","19683072","19683350","19684366","19681806","19682261","19682591","19683073","19683351","19682967","19682968","19682588","19683070","19683348","19681804","19682259","19682589","19683071","19683349","19684365","19681805","19682260","19682590","19683350","19683936","19681806","19682261","19682591","19683073","19683351","19682588","19683070","19683348","19681804","19682259","19682589","19683349","19684365","19681805","19682260","19682590","19683350","19683936","19682261","19682591","19683073","19683351","19682101","19682100","19684366","19683405","19681995","19682967","19683511","19681996","19682424","19683230","19683512","19683070","19684257","19681804","19682259","19683071","19683349","19682260","19683072","19683350","19683936","19683073","19681858","19682589","19683349","19683854","19682588","19683348","19684364","19681804","19682589","19683071","19683349","19681805","19682260","19682590","19683072","19683350","19684366","19681806","19682261","19682591","19683073","19683351","19682641","19683122","19683348","19683402","19682642","19682801","19683403","19681859","19682643","19683404","19681860","19682318","19684257","19681804","19682259","19683071","19683349","19681805","19682260","19683072","19683350","19684259","19681806","19682261","19682591","19683073","19692350","19683122","19682801","19683228","19683403","19684417","19681996","19682424","19682968","19682854","19682855","19682856","19684364","19682101","19684366","19682102","19682046","19682854","19683935","19684258","19682047","19682855","19683936","19682048","19682856","19682801","19681995","19681859","19684366","19692298","19692195","19692299","19681804","19683349","19683072","19683350","19681806","19683073","19683351","19682641","19683122","19681994","19682801","19682101","19682643","19684050","19681860","19682318","19681804","19683348","19681804","19682589","19683349","19681805","19682260","19692195","19684257","19681804","19683071","19683349","19681805","19692194","19692298","19692299","19692350","19683348","19692141","19692194","19683350","19692193","19692297","19692194","19692299","19682259","19682589","19681805","19682590","19683350","19681806","19682591","19683351","19683228","19682423","19683511","19681996","19682854","19682047","19682855","19682048","19682856","19683349","19682260","19682261","19683073","19682854","19682047","19682855","19682048","19682856","19684365","19692349","19682908","19683230","19682261","19692195","19692350","19683073","19683405"]},"columns":[{"id":"player_id","name":"player_id","type":"character"},{"id":"level","name":"level","type":"character"},{"id":"date","name":"date","type":"Date","format":{"cell":{"date":true},"aggregated":{"date":true}}},{"id":"time","name":"time","type":"Date","format":{"cell":{"time":true},"aggregated":{"time":true}}},{"id":"weekday","name":"weekday","type":["ordered","factor"]},{"id":"session_id","name":"session_id","type":"character"}],"filterable":true,"pagination":false,"highlight":true,"dataKey":"7b62c57c9faa6e50cfd007f9a957915f"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+
+</div>
+</div>
+</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /container fluid -->
+
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
+
+
+
+</body></html>
